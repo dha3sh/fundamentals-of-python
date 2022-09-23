@@ -1,0 +1,19 @@
+Write a python program takes a number and finds the binary equivalent of a number recursively.
+
+Input & Output Format:
+Input consists of one integer.
+Output consists of a binary number.
+
+Sample Input:
+5
+
+Sample Output:
+1 0 1
+
+Program:
+def convert(n):
+    if n>1:
+        convert(n//2)
+    print(n % 2,end="")
+dec=int(input())
+convert(dec)
