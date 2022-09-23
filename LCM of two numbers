@@ -1,0 +1,27 @@
+Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found. 
+The product of the union of prime factors of both the numbers gives the LCM of the two numbers.
+
+Input & Output Format:
+Input consists of two integers.
+Output consists of the lcm of two numbers.
+
+Sample Input:
+5
+30
+
+Sample Output:
+LCM of 5 and 30 is 30
+
+Program:
+a=int(input())
+b=int(input())
+if(a>b):
+    min1=a
+else:
+    min1=b
+while(1):
+    if(min1%a==0 and min1%b==0):
+        print("LCM of",a,"and",b,"is",min1)
+        break
+    min1=min1+1
+    
