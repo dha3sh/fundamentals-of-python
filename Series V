@@ -1,0 +1,18 @@
+Write a program to generate the following series --- 121,225,361,... 
+
+Input format: 
+The input containing an integer which denotes 'n' 
+
+Output format: 
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+5
+121 225 361 529 729 
+
+Program:
+n=int(input())
+x=7
+for i in range(0,n+1):
+    x=x+4
+    print(x**2)
