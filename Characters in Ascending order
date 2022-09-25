@@ -1,0 +1,26 @@
+Write a python code to arrange the characters in ascending order of the given String
+
+Input & Output Format:
+Input consists of a string.
+Output consists of a sorted string.
+
+Sample Input & Output:
+cyfuno
+cfnouy
+
+Program:
+s1=input().lower()
+lst=list(s1)
+asc=[]
+final=[]
+s2=""
+for i in lst:
+    a=ord(i)
+    asc.append(a)
+asc.sort()
+for i in asc:
+    b=chr(i)
+    final.append(b)
+for i in final:
+    s2+=i
+print(s2)
