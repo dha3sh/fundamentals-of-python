@@ -1,0 +1,17 @@
+Write a program to convert decimal number to binary using recursive function.
+
+Input & Output Format:
+Input consists of one integer.
+Output consists of a binary value for the given input.
+
+Sample Input & Output:
+5
+101
+
+Program:
+def dectobin(n):
+    if n>1:
+        dectobin(n//2)
+    print(n%2,end="")
+n=int(input())
+dectobin(n)
